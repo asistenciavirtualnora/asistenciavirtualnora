@@ -1,16 +1,15 @@
-## Hi there 👋
+# Asistencia Virtual Nora
 
-<!--
-**asistenciavirtualnora/asistenciavirtualnora** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+🌸 Asistencia Virtual Nora es mi servicio como asistente virtual freelance.  
+Ofrezco apoyo profesional en tareas digitales como:
 
-Here are some ideas to get you started:
+- Gestión de correos electrónicos
+- Organización de agenda
+- Atención al cliente por WhatsApp y redes sociales
+- Búsqueda de información
+- Redacción y edición básica de documentos
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+Esta web es mi carta de presentación, hecha con cariño, elegancia y funcionalidad.
+
+📬 Contacto: asistenciavirtualnora@gmail.com
+📱 Instagram: [@asistenciavirtualnora](https://instagram.com/asistenciavirtualnora)
