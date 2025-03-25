@@ -13,13 +13,14 @@
       padding: 0;
     }
     header {
-      background-color: #fcdce4;
-      padding: 2rem;
+      background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('https://images.unsplash.com/photo-1587614295999-6f3eabeb06b5?auto=format&fit=crop&w=1350&q=80') center/cover no-repeat;
+      padding: 4rem 2rem;
       text-align: center;
+      color: white;
     }
     header h1 {
       font-size: 2.8rem;
-      color: #802b44;
+      margin-bottom: 0.5rem;
     }
     nav {
       text-align: center;
@@ -33,17 +34,60 @@
     }
     section {
       padding: 2rem;
-      max-width: 800px;
+      max-width: 900px;
       margin: auto;
+    }
+    #sobre-mi {
+      background: none;
+      color: #4a4a4a;
+      padding: 3rem 2rem;
+      border-radius: 12px;
     }
     h2 {
       color: #c15678;
     }
     .servicio {
       background-color: #ffe9ee;
-      padding: 1rem;
+      padding: 1.5rem;
       border-radius: 10px;
-      margin-bottom: 1.5rem;
+      margin-bottom: 2rem;
+      perspective: 1000px;
+    }
+    .servicio-inner {
+      position: relative;
+      width: 100%;
+      height: 200px;
+      text-align: center;
+      transition: transform 0.8s;
+      transform-style: preserve-3d;
+      cursor: pointer;
+    }
+    .servicio:hover .servicio-inner {
+      transform: rotateY(180deg);
+    }
+    .servicio-front, .servicio-back {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      backface-visibility: hidden;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      border-radius: 10px;
+    }
+    .servicio-front {
+      background-color: #ffe9ee;
+    }
+    .servicio-back {
+      background-color: #fbc7d4;
+      transform: rotateY(180deg);
+      padding: 1rem;
+    }
+    .servicio-back img {
+      max-width: 100px;
+      border-radius: 10px;
+      margin-top: 1rem;
     }
     footer {
       background-color: #fcdce4;
@@ -106,54 +150,3 @@
     <h2>Sobre mí</h2>
     <p>Experiencia en gestión administrativa. Me especializo en organización, atención al cliente y soporte remoto. Mi enfoque combina responsabilidad, proactividad y buen gusto.</p>
   </section>
-
-  <section id="servicios">
-    <h2>Servicios</h2>
-    <div class="servicio">
-      <h3>📧 Gestión de correos electrónicos</h3>
-      <p>Organizo, filtro y respondo tus correos para que tú te centres en lo importante.</p>
-    </div>
-    <div class="servicio">
-      <h3>📅 Manejo de agenda</h3>
-      <p>Programo tus reuniones y eventos, envío recordatorios y mantengo tu calendario al día.</p>
-    </div>
-    <div class="servicio">
-      <h3>📱 Gestión de redes sociales</h3>
-      <p>Publico contenido, respondo mensajes y ayudo a mantener tu comunidad activa.</p>
-    </div>
-    <div class="servicio">
-      <h3>💬 Atención al cliente</h3>
-      <p>Respondo consultas vía WhatsApp, Instagram o email con rapidez y cercanía.</p>
-    </div>
-    <div class="servicio">
-      <h3>🔎 Búsqueda de información</h3>
-      <p>Realizo resúmenes e investigaciones para apoyarte en tus decisiones.</p>
-    </div>
-    <div class="servicio">
-      <h3>📝 Edición básica de documentos</h3>
-      <p>Manejo herramientas como Word, Excel, Google Drive...</p>
-    </div>
-  </section>
-
-  <section id="contacto">
-    <h2>Contacto</h2>
-    <p>¿Te interesa trabajar conmigo? Escríbeme un mensaje directo o por correo electrónico. Estoy lista para ayudarte a crecer.</p>
-    <div class="contact-links">
-      <a href="https://wa.me/" target="_blank">📲 WhatsApp</a>
-      <a href="https://www.instagram.com/" target="_blank">📸 Instagram</a>
-      <a href="mailto:tucorreo@example.com">✉️ Email</a>
-    </div>
-
-    <form>
-      <input type="text" placeholder="Tu nombre" required>
-      <input type="email" placeholder="Tu correo electrónico" required>
-      <textarea rows="5" placeholder="Tu mensaje" required></textarea>
-      <button type="submit">Enviar</button>
-    </form>
-  </section>
-
-  <footer>
-    <p>&copy; 2025 Asistencia Virtual Nora. Elegancia y eficiencia en lo digital.</p>
-  </footer>
-</body>
-</html>
