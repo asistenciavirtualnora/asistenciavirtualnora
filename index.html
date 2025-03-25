@@ -59,6 +59,9 @@
     .servicio:hover .servicio-inner {
       transform: rotateY(180deg);
     }
+    .servicio.flipped .servicio-inner {
+      transform: rotateY(180deg);
+    }
     .servicio-front, .servicio-back {
       position: absolute;
       width: 100%;
@@ -127,6 +130,16 @@
       background-color: #a44e6b;
     }
   </style>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const servicios = document.querySelectorAll(".servicio");
+      servicios.forEach(servicio => {
+        servicio.addEventListener("click", () => {
+          servicio.classList.toggle("flipped");
+        });
+      });
+    });
+  </script>
 </head>
 <body>
   <header>
@@ -219,7 +232,7 @@
     <h2>Contacto</h2>
     <p>¿Te interesa trabajar conmigo? Escríbeme un mensaje directo o por correo electrónico. Estoy lista para ayudarte a crecer.</p>
     <div class="contact-links">
-      <a href="https://wa.me/34611478188" target="_blank">📲 WhatsApp</a>
+      <a href="https://wa.me/3466478188" target="_blank">📲 WhatsApp</a>
       <a href="https://www.instagram.com/asistenciavirtualnora" target="_blank">📸 Instagram</a>
       <a href="mailto:asistenciavirtualnora@gmail.com">✉️ Email</a>
     </div>
